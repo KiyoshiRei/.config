@@ -1,12 +1,8 @@
 return {
-  "rose-pine/neovim",
-  name = "rose-pine",
-  priority = 1000,
-  config = function()
-    require("rose-pine").setup({
-      variant = "dawn", -- use "dawn" here
-    })
-    vim.cmd("colorscheme rose-pine")
-  end,
+    "vague2k/vague.nvim",
+    config = function()
+        require("vague").setup({ transparent = true })
+        vim.cmd("colorscheme vague")
+        vim.cmd(":hi statusline guibg=NONE")
+    end
 }
-
